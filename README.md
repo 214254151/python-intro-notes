@@ -13,7 +13,7 @@ Variable creation (Declaration)
 Variable assignment (Initialization)
 Variable changed (Execution)
 
-## Variable Declaration:
+### Variable Declaration:
 
 ### Here are a few examples of valid variable names:
 
