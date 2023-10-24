@@ -4,6 +4,35 @@ In Python, variables are used to store and manipulate data.
 Python is a dynamically typed language, which means you don't need to declare the data type of a variable explicitly. 
 Here's an introduction to variables in Python:
 
+## Comments
+
+In Python, comments are used to include explanatory notes or remarks within your code that are not executed by the Python interpreter. Comments are useful for documentation, clarifying code, and making it more understandable to both yourself and other developers. There are two common ways to add comments in Python:
+
+### Single-Line Comments: 
+Single-line comments are used to add a brief comment on a single line. They start with a # character and continue until the end of the line.
+
+```
+# This is a single-line comment
+variable = 42  # You can also add comments at the end of a line of code
+
+```
+
+## Multi-Line Comments 
+(Docstrings): For longer comments, especially when documenting functions, classes, or modules, multi-line comments are often used as docstrings. A docstring is enclosed in triple-quotes (single or double) and can span multiple lines.
+
+```
+"""
+This is a multi-line comment or a docstring.
+It can be used for documentation purposes.
+For example, documenting a function.
+"""
+def my_function():
+    """This is a docstring for a function."""
+    # Function code here
+
+
+```
+
 ### WHat are variables?
 Variables are a temporary storage space in a computer’s memory. When a variable’s value changes the program’s current state also changes. A variable acts as a container to hold a different number of data items or values. 
 
@@ -12,6 +41,7 @@ Variables are a temporary storage space in a computer’s memory. When a variabl
 Variable creation (Declaration)
 Variable assignment (Initialization)
 Variable changed (Execution)
+
 
 ### Variable Declaration:
 
