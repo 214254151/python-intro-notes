@@ -26,10 +26,10 @@ This is a multi-line comment or a docstring.
 It can be used for documentation purposes.
 For example, documenting a function.
 """
+
 def my_function():
     """This is a docstring for a function."""
     # Function code here
-
 
 ```
 
