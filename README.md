@@ -10,3 +10,5 @@ In Python, you declare a variable simply by assigning a value to it. There's no 
 ```
 my_variable = 42
 ```
+In this example, my_variable is declared and assigned the integer value 42.
+
