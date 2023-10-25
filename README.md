@@ -155,3 +155,16 @@ Python is a dynamically-typed language, which means that you don't need to decla
 3.    Floating point numbers: Floating-point numbers represent double-precision numbers.
 4.    Complex numbers: Complex numbers represent numbers as a pair of double-precision numbers.
 5.    Strings: A sequence of Unicode characters e.g. a word or a sentence that can be             manipulated.
+
+## Manipulating booleans
+
+```
+ Syntax	 Description
+ a or b	 
+If either a or b is True, then the result will be True. 
+
+If both a and b are False then the result will be False.
+ a and b	 If a and b are True, then the result will be True. Otherwise, the result will be False.
+ not a	 If a is True, False is returned. If a is False, True is returned.
+
+```
