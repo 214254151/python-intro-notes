@@ -149,7 +149,7 @@ char = chr(65)   # char will be 'A'
 
 Python is a dynamically-typed language, which means that you don't need to declare the data type of a variable explicitly. Python infers the data type based on the value assigned to the variable. Python supports a wide range of data types, including:
 
-1.     Integers	 These represent numbers in an unlimited range. This is only limited by a machine’s 
+1.    Integers	 These represent numbers in an unlimited range. This is only limited by a machine’s      
  memory.
 2.    Booleans	 Evaluate to ‘True or False’, 1 or 0 respectively.
 3.    Floating point numbers	 Floating-point numbers represent double-precision numbers.
