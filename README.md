@@ -107,3 +107,38 @@ Variables in Python have a scope, which determines where in the code they can be
 Use descriptive variable names to make your code more readable.
 Follow naming conventions, like using lowercase letters and underscores for variable names (e.g., my_variable).
 
+### Casting
+
+In Python, casting refers to the process of converting one data type into another. 
+This is also known as type conversion or typecasting.
+
+Here are some of the most commonly used casting functions in Python:
+
+1.    int(): This function is used to convert a value to an integer.
+```
+x = int(3.14)  # x will be 3
+```
+
+2.    float(): Use this function to convert a value to a floating-point number.
+```
+y = float("3.14")  # y will be 3.14
+```
+3.    srt(): It comverts a value to a string.
+```
+s = str(42)  # s will be the string "42"
+```
+4.    bool(): This function converts a value to a boolean.
+```
+b = bool(0)  # b will be False
+```
+5.   list(): Converts a sequence (e.g., a string or tuple) into a list. 
+```
+my_list = list("hello")  # my_list will be ['h', 'e', 'l', 'l', 'o']
+```
+6.    ord() and chr(): These functions are used to convert characters to their Unicode code points
+```
+and vice versa.
+code = ord('A')  # code will be 65
+char = chr(65)   # char will be 'A'
+```
+
