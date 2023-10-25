@@ -141,6 +141,4 @@ and vice versa.
 code = ord('A')  # code will be 65
 char = chr(65)   # char will be 'A'
 ```
-
-#### It's important to be aware of the data types you are working with and to use casting when necessary to ensure that your code behaves as expected. 
 #### In Python, some operations might not work as intended if you mix incompatible data types, so typecasting can be a useful tool to manage data effectively.
