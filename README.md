@@ -151,7 +151,7 @@ Python is a dynamically-typed language, which means that you don't need to decla
 
 1.    Integers	 These represent numbers in an unlimited range. This is only limited by a machine’s      
  memory.
-2.    Booleans	 Evaluate to ‘True or False’, 1 or 0 respectively.
-3.    Floating point numbers	 Floating-point numbers represent double-precision numbers.
-4.    Complex numbers	 Complex numbers represent numbers as a pair of double-precision numbers.
-5.    Strings	 A sequence of Unicode characters e.g. a word or a sentence that can be             manipulated.
+2.    Booleans: Evaluate to ‘True or False’, 1 or 0 respectively.
+3.    Floating point numbers: Floating-point numbers represent double-precision numbers.
+4.    Complex numbers: Complex numbers represent numbers as a pair of double-precision numbers.
+5.    Strings: A sequence of Unicode characters e.g. a word or a sentence that can be             manipulated.
