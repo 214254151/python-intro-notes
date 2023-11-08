@@ -171,27 +171,27 @@ If both a and b are False then the result will be False.
 # WEEK 3 day 1 - 5
 ## Here are all of the methods of list objects:  
 
-list.append(x): Adds an item x to the end of the list.
+### list.append(x): Adds an item x to the end of the list.
 
-list.extend(iterable): Extends the list by appending all the items from the iterable.
+### list.extend(iterable): Extends the list by appending all the items from the iterable.
 
-list.insert(i, x): Inserts an item x at the given position i. The first argument is the index of the element before which to insert.
+### list.insert(i, x): Inserts an item x at the given position i. The first argument is the index of the element before which to insert.
 
-list.remove(x): Removes the first item in the list whose value is equal to x. Raises a ValueError if there is no such item.
+### list.remove(x): Removes the first item in the list whose value is equal to x. Raises a ValueError if there is no such item.
 
-list.pop([i]): Removes and returns the item at the given position i in the list. If no index is specified, a.pop() removes and returns the last item.
+### list.pop([i]): Removes and returns the item at the given position i in the list. If no index is specified, a.pop() removes and returns the last item.
 
-list.clear(): Removes all items from the list.
+### list.clear(): Removes all items from the list.
 
-list.index(x[, start[, end]]): Returns the zero-based index of the first item in the list whose value is equal to x. Optional start and end arguments limit the search to a specific subsequence.
+### list.index(x[, start[, end]]): Returns the zero-based index of the first item in the list whose value is equal to x. Optional start and end arguments limit the search to a specific subsequence.
 
-list.count(x): Returns the number of times x appears in the list.
+### list.count(x): Returns the number of times x appears in the list.
 
-list.sort(key=None, reverse=False): Sorts the items of the list in place. Optional arguments key and reverse can be used for sort customization.
+### list.sort(key=None, reverse=False): Sorts the items of the list in place. Optional arguments key and reverse can be used for sort customization.
 
-list.reverse(): Reverses the elements of the list in place.
+### list.reverse(): Reverses the elements of the list in place.
 
-list.copy(): Returns a shallow copy of the list, equivalent to a[:].
+### list.copy(): Returns a shallow copy of the list, equivalent to a[:].
 
   ##  Here are code examples for each of the listed list methods in Python:
 
