@@ -335,9 +335,9 @@ If the expression is a tuple (e.g., (x, y)), it must be parenthesized.
 
 6.    Examples of List Comprehensions:
 
-Creating a new list with doubled values, filtering out negative numbers, applying a function to elements, and stripping whitespace from strings.
-Creating a list of 2-tuples (number, square) and flattening a nested list.
-Complex expressions and nested functions can be used in list comprehensions.
+-    Creating a new list with doubled values, filtering out negative numbers, applying a         function to elements, and stripping whitespace from strings.
+-    Creating a list of 2-tuples (number, square) and flattening a nested list.
+-    Complex expressions and nested functions can be used in list comprehensions.
 
 7.    Error Handling:
 
