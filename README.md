@@ -350,7 +350,53 @@ In
 
 summary, list comprehensions provide a concise and expressive way to create lists, apply operations, and filter elements from existing sequences or iterables. They are a powerful feature for Python programmers and can simplify code while making it more readable.
 
+                            # NESTED LIST COMPREHENSIONS
 
+## Nested List Comprehensions:
 
+-    List comprehensions can be nested, allowing for more complex transformations and operations.
+## Example: Transposing a Matrix:
 
+-    Consider a 3x4 matrix represented as a list of lists.
+-    The goal is to transpose the matrix, switching rows and columns.
 
+## List Comprehension Approach:
+
+-    A nested list comprehension can achieve matrix transposition elegantly:
+
+```
+[[row[i] for row in matrix] for i in range(4)]
+
+```
+## Equivalent for Loop Approach:
+
+-    The nested list comprehension is equivalent to a series of for loops:
+  
+  ```
+transposed = []
+for i in range(4):
+    transposed.append([row[i] for row in matrix])
+```
+## Further Expanded Approach:
+
+-    The equivalent for loop approach can be broken down into more detail:
+
+```
+transposed = []
+for i in range(4):
+    transposed_row = []
+    for row in matrix:
+        transposed_row.append(row[i])
+    transposed.append(transposed_row)
+```
+
+## Using Built-In Function zip():
+
+-    In real-world scenarios, built-in functions are preferred for readability and efficiency.
+-    The zip() function transposes the matrix efficiently:
+
+```
+list(zip(*matrix))
+```
+
+In summary, the provided examples demonstrate how to transpose a matrix using both nested list comprehensions and the 'zip()' function. While list comprehensions are a powerful tool, built-in functions like 'zip()' are often preferred for more complex operations due to their readability and efficiency.
