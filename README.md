@@ -261,3 +261,33 @@ print("Shallow copy:", copy_of_list)
 
 
   ```
+# Using Lists as a Stack (Last-In, First-Out):
+
+Lists can work like a stack, where the last item added is the first one retrieved (Last-In, First-Out or LIFO).
+To add an item to the top of the stack, use the append() method.
+To retrieve an item from the top of the stack, use pop() without specifying an index.
+
+## Example
+
+```
+stack = [3, 4, 5]
+stack.append(6)
+stack.append(7)
+stack.pop()  # Retrieves and removes the top item.
+```
+# Using Lists as a Queue (First-In, First-Out):
+
+Lists can also mimic a queue, where the first item added is the first to be retrieved (First-In, First-Out or FIFO).
+However, lists are not efficient for this because adding or removing items from the beginning requires shifting other elements.
+For efficient queue operations, use collections.deque which allows fast appends and pops from both ends.
+
+## Example using collections.deque:
+
+```
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+queue.append("Terry")  # Adding an item to the end.
+queue.popleft()  # Removing the first item efficiently.
+```
+In summary, lists can serve as both stacks and queues, but for efficient queue operations, it's recommended to use collections.deque. Stacks follow Last-In, First-Out (LIFO) while queues follow First-In, First-Out (FIFO).
+
