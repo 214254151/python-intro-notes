@@ -400,3 +400,6 @@ list(zip(*matrix))
 ```
 
 In summary, the provided examples demonstrate how to transpose a matrix using both nested list comprehensions and the 'zip()' function. While list comprehensions are a powerful tool, built-in functions like 'zip()' are often preferred for more complex operations due to their readability and efficiency.
+
+## The del statement / Tuples and Sequences
+
