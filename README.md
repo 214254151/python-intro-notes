@@ -350,7 +350,6 @@ In
 
 summary, list comprehensions provide a concise and expressive way to create lists, apply operations, and filter elements from existing sequences or iterables. They are a powerful feature for Python programmers and can simplify code while making it more readable.
 
-                            # NESTED LIST COMPREHENSIONS
 
 ## Nested List Comprehensions:
 
