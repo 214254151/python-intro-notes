@@ -621,5 +621,48 @@ obj.new_method()  # Output: Dynamically added method
 ```
 ## In summary, the provided examples demonstrate how to transpose a matrix using both nested list comprehensions and the 'zip()' function. While list comprehensions are a powerful tool, built-in functions like 'zip()' are often preferred for more complex operations due to their readability and efficiency.
 
+# PRIVATE VARIABLES
 
+In Python, the concept of "private" instance variables, meaning variables that cannot be accessed from outside an object, is not enforced by the language. Instead, there is a convention that names prefixed with a single underscore (e.g., `_spam`) should be treated as non-public parts of the API, indicating that they are implementation details and subject to change without notice. However, this is just a convention, and the variables can still be accessed.
 
+For situations where there is a need to prevent name clashes with names defined by subclasses, Python provides limited support for a mechanism called `name mangling`. Any identifier of the form `__spam` (at least two leading underscores and at most one trailing underscore) is textually replaced with `_classname__spam`, where `classname` is the current class name with leading underscores stripped.
+
+## Here's an explanation and an example:
+
+```
+
+class Mapping:
+    def __init__(self, iterable):
+        self.items_list = []
+        self.__update(iterable)  # Call the private method
+
+    def update(self, iterable):
+        for item in iterable:
+            self.items_list.append(item)
+
+    # Private copy of the original update() method
+    __update = update
+
+class MappingSubclass(Mapping):
+    def update(self, keys, values):
+        # Provides a new signature for update()
+        # Does not break __init__()
+        for item in zip(keys, values):
+            self.items_list.append(item)
+
+# Creating instances and testing
+mapping_instance = Mapping([1, 2, 3])
+print(mapping_instance.items_list)  # Output: [1, 2, 3]
+
+subclass_instance = MappingSubclass([4, 5, 6])
+print(subclass_instance.items_list)  # Output: [4, 5, 6]
+
+# Accessing the private method directly (not recommended)
+subclass_instance._Mapping__update([7, 8, 9])
+print(subclass_instance.items_list)  # Output: [4, 5, 6, 7, 8, 9]
+
+```
+
+In the example, the __update method in the Mapping class is considered private, and its name is mangled to _Mapping__update. The MappingSubclass class introduces a new update method without breaking the __init__ method of the base class.
+
+It's important to note that name mangling is a convention to avoid accidental name clashes, but it does not provide true encapsulation or security. The variables can still be accessed if needed, though doing so is discouraged.
