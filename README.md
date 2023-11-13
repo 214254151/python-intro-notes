@@ -410,7 +410,7 @@ Inheritance in Python is a fundamental object-oriented programming (OOP) concept
 -    Inheritance is implemented using a syntax that defines a derived class by specifying its base class.
 -    Syntax: class DerivedClassName(BaseClassName):
 
-  ```
+```   
 
 class BaseClassName:
     def base_method(self):
@@ -465,6 +465,7 @@ obj.overridden_method()    # Output: Derived class method (overridden)
 
 -    The derived class can provide its own implementation of a method, effectively overriding the method inherited from the base class.
 -    This allows customization of behavior in the derived class.
+  
 ```
 class BaseClassName:
     def overridden_method(self):
