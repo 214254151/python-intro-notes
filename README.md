@@ -397,8 +397,65 @@ for i in range(4):
 ```
 list(zip(*matrix))
 ```
-
-In summary, the provided examples demonstrate how to transpose a matrix using both nested list comprehensions and the 'zip()' function. While list comprehensions are a powerful tool, built-in functions like 'zip()' are often preferred for more complex operations due to their readability and efficiency.
-
 ## The del statement / Tuples and Sequences
+
+
+# WEEK 4: INHERITANCE
+
+Inheritance in Python is a fundamental object-oriented programming (OOP) concept that allows a new class (the derived or child class) to inherit attributes and behaviors from an existing class (the base or parent class). This promotes code reuse and establishes a hierarchy of classes, enabling the creation of more specialized classes based on existing ones.
+
+## Key Points about Inheritance in Python:
+1.    Class Definition:
+
+-    Inheritance is implemented using a syntax that defines a derived class by specifying its base class.
+-    Syntax: class DerivedClassName(BaseClassName):
+
+2.    Attribute and Method Access:
+
+-    A derived class inherits attributes and methods from its base class.
+Attributes not found in the derived class are searched in the base class, following a specific order known as the Method Resolution Order (MRO).
+
+3.    Instantiation:
+
+-    Instances of the derived class can be created, and they inherit the properties of the base class.
+Syntax: obj = DerivedClassName()
+
+4.    Method Overriding:
+
+-    The derived class can provide its own implementation of a method, effectively overriding the method inherited from the base class.
+-    This allows customization of behavior in the derived class.
+
+5.    Super Function:
+
+-    The super() function is commonly used to call methods from the base class. It ensures that the correct method in the inheritance hierarchy is called.
+
+6.    Dynamic Ordering (MRO):
+
+-    Python uses a dynamic ordering mechanism known as Method Resolution Order (MRO) to determine the sequence in which base classes are searched for attributes and methods.
+-    MRO resolves complexities in multiple inheritance scenarios and ensures a consistent order.
+
+7.    Multiple Inheritance:
+
+-    Python supports multiple inheritance, allowing a class to inherit from more than one base class.
+-    The order of base classes matters, as it influences the MRO.
+
+8.    Built-in Functions:
+
+-    The isinstance() function checks if an object belongs to a particular class or its derived classes.
+The issubclass() function checks if a class is a subclass of another class.
+
+9.    Use Cases:
+
+-    Inheritance is beneficial for code organization, promoting reusability and extensibility.
+-    It facilitates the creation of specialized classes without duplicating code.
+
+10.    Dynamic Nature:
+
+-    Inheritance in Python is dynamic, allowing modifications and extensions to classes during runtime.
+-    This dynamic nature contributes to the flexibility and adaptability of Python programs.
+In summary, inheritance in Python is a powerful mechanism that fosters code reuse, extensibility, and the creation of well-organized class hierarchies. It is a cornerstone of object-oriented programming in Python, enabling the construction of complex and modular software systems.
+
+## In summary, the provided examples demonstrate how to transpose a matrix using both nested list comprehensions and the 'zip()' function. While list comprehensions are a powerful tool, built-in functions like 'zip()' are often preferred for more complex operations due to their readability and efficiency.
+
+
 
